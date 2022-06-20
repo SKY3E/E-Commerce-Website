@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>E-Commerce Home</title>
+    <link type="text/css" rel="stylesheet" href="templates/item-store.css">
+  </head>
+  <body>
+    <div class="navbar-main">
+      <div class="navbar-main-left">
+        <div><a class="navbar-main-link" href="{% url 'home' %}">Home</a></div>
+      </div>
+      <div class="navbar-main-right">
+        <div><a class="navbar-main-link" href="{% url 'item_store' %}">All Items</a></div>
+        <div><a class="navbar-main-link" href="{% url 'item_store' %}">Cart</a></div>
+        <div><a class="navbar-main-link" href="{% url 'item_store' %}">SignIn</a></div>
+      </div>
+    </div>
+    <div class="prefernce-bar-main">
+      <div class="preference-bar-main-item">Meat & Seafood</div>
+      <div class="preference-bar-main-item">Bakery</div>
+      <div class="preference-bar-main-item">Fruits</div>
+      <div class="preference-bar-main-item">Vegetables</div>
+      <div class="preference-bar-main-item">Dairy</div>
+    </div>
+  </body>
+</html>

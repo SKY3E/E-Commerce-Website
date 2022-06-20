@@ -1,0 +1,85 @@
+{% load static %}
+
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>E-Commerce Home</title>
+      <link type="text/css" rel="stylesheet" href="templates/home.css">
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,800;1,300&family=Yanone+Kaffeesatz:wght@300;500;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+      <div class="navbar-main">
+        <div class="navbar-main-left">
+          <div><a class="navbar-main-link" href="{% url 'home' %}">Home</a></div>
+        </div>
+        <div class="navbar-main-right">
+          <div><a class="navbar-main-link" href="{% url 'item_store' %}">All Items</a></div>
+          <div><a class="navbar-main-link" href="{% url 'item_store' %}">Cart</a></div>
+          <div><a class="navbar-main-link" href="{% url 'item_store' %}">SignIn</a></div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="main-image-container">
+          <img class="top-image" src="files-pictures/veggiesontable.jpg">
+          <div class="top-image-text">Shop & Co.</div>
+        </div>
+        <div class="main-preview-container">
+          <div class="main-preview">
+            <img class="main-preview-img" src="files-pictures/applespreview.jpg">
+            <div class="main-preview-desc">
+              <div class="main-preview-desc-text">Discover our vast organic range of fruits originating from your local farmers.</div>
+              <button class="main-preview-desc-btn"><a style="color: black; text-decoration: none;" href="{% url 'item_store' %}">Discover Choices</a></button>
+            </div>
+          </div>
+          <div class="main-preview">
+            <img class="main-preview-img" src="files-pictures/meatpreview.jpg">
+            <div class="main-preview-desc">
+              <div class="main-preview-desc-text">Visit our diverse meat choices and pick out the best one for your next family dinner.</div>
+              <button class="main-preview-desc-btn"><a style="color: black; text-decoration: none;" href="{% url 'item_store' %}">Discover Choices</a></button>
+            </div>
+          </div>
+          <div class="main-preview">
+            <img class="main-preview-img" src="files-pictures/bread.jpeg">
+            <div class="main-preview-desc">
+              <div class="main-preview-desc-text">Pick out your favorite bread to go with another one of our world famous spreads, or cheeses.</div>
+              <button class="main-preview-desc-btn"><a style="color: black; text-decoration: none;" href="{% url 'item_store' %}">Discover Choices</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="main-sale-container">
+          Save 50% off select products from 18/July to 25/July!
+        </div>
+        <div class="main-preview-container">
+          <div class="main-preview-two" style="margin-right: 10px;">
+            <img class="main-preview-img" src="files-pictures/tuna.jpg">
+            <div class="main-preview-desc">
+              <div style="padding-left: 25px; font-family: Poppins; font-weight: 0, 500;">Yellowfin Tuna</div>
+              <div class="main-preview-saleitems-text" style="padding-bottom: 0;""><span style="text-decoration: line-through; color: rgb(173, 96, 96);">$16.99</span> $14.44/lb</div>
+              <div class="main-preview-saleitems-text" style="padding-top: 0; font-family: Poppins; font-weight: 0, 500;">Store Pick</div>
+              <div class="main-preview-saleitems-box">15% Off</div>
+            </div>
+          </div>
+          <div class="main-preview-two" style="margin-left: 10px;">
+            <img class="main-preview-img" src="files-pictures/cookies.jpg">
+            <div class="main-preview-desc">
+              <div style="padding-left: 25px; font-family: Poppins; font-weight: 0, 500;">Chocolate Chip Cookies</div>
+              <div class="main-preview-saleitems-text" style="padding-bottom: 0;"><span style="text-decoration: line-through; color: rgb(173, 96, 96);">$5.99</span> $5.40/lb</div>
+              <div class="main-preview-saleitems-text" style="padding-top: 0; font-family: Poppins; font-weight: 0, 500;">Store Pick</div>
+              <div class="main-preview-saleitems-box">10% Off</div>
+            </div>
+          </div>
+        </div>
+        <div class="main-policy-container">
+          <div class="main-policy-text">Our company policy is to provide our customers with the <span style="font-weight: 800;">best organic and local products</span> to <span style="font-weight: 800;">boost their well-being and bring a more joyous mood</span> to this world.</div>
+        </div>
+      </div>
+      <div class="main-bottom-container">
+        <div>Div 1</div>
+        <div>Div 2</div>
+      </div>
+    </body>
+  </html>
