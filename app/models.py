@@ -8,11 +8,11 @@ class item(models.Model):
   details = models.CharField(max_length=1000, blank=True, null=True)
   price = models.DecimalField(blank=False, null=False, decimal_places=2, max_digits=20)
   tag_choices = (
-    ('bakery', 'bakery'),
-    ('meat&seafood', 'meat&seafood'),
-    ('fruits', 'fruits'),
-    ('vegetables', 'vegetables'),
-    ('dairy', 'dairy')
+    ('Bakery', 'Bakery'),
+    ('Meat&Seafood', 'Meat&Seafood'),
+    ('Fruits', 'Fruits'),
+    ('Vegetables', 'Vegetables'),
+    ('Dairy', 'Dairy')
   )
   tag = models.CharField(max_length=100, default=None, blank=False, null=False, choices=tag_choices)
   image = models.ImageField(default=None, blank=False, null=False, upload_to='files-pictures')
