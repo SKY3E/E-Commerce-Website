@@ -6,7 +6,7 @@ from django.db.models import Model
 class item(models.Model):
   name = models.CharField(max_length=100, blank=False, null=False)
   details = models.CharField(max_length=1000, blank=True, null=True)
-  price = models.BigIntegerField(blank=False, null=False)
+  price = models.DecimalField(blank=False, null=False, decimal_places=2, max_digits=20)
   tag_choices = (
     ('bakery', 'bakery'),
     ('meat&seafood', 'meat&seafood'),
