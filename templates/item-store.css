@@ -112,8 +112,6 @@
   margin-left: 100px;
   margin-right: 100px;
 
-  height: 200px;
-
   display: grid;
   grid-template-columns: auto auto auto;
   row-gap: 20px;
@@ -195,11 +193,25 @@
   color: black;
 }
 
+.bottom-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: solid;
+  border-top-width: 2px;
+  border-top-color: rgb(202, 224, 241);
+
+  margin-top: 20px;
+
+  Background-color : rgb(224, 240, 226);
+  height: 60px;
+}
+
 /* Body/Main Page CSS */
 body{
   margin: 0;
-
-  height: 2000px;
 
   background-color: rgb(177, 214, 177);
 }
