@@ -138,6 +138,10 @@
   background-color: rgb(224, 240, 226);
 }
 
+.single-item-container:hover{
+  box-shadow: 5px 10px 18px rgb(107, 143, 122);
+}
+
 /* Store Item Specific Info Containers */
 .single-item-container-img{
   width: 100%;
