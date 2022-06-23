@@ -27,6 +27,7 @@
     
     <div class="triple-item-container">
       {% for item in items %}
+      {% if item.tag == 'Meat&Seafood' %}
       <div class="single-item-container">
         <img class="single-item-container-img" src="{{item.image}}">
         <div class="single-item-container-desc">
@@ -38,6 +39,7 @@
           </div>
         </div>
       </div>
+      {% endif %}
       {% endfor %}
     </div>
     <div class="bottom-container">
