@@ -1,6 +1,7 @@
 import re
 from django.shortcuts import render
 from .models import item
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 def home(request):

@@ -4,7 +4,7 @@
   <html lang="en">
     <head>
       <title>E-Commerce Home</title>
-      <link type="text/css" rel="stylesheet" href="templates/home.css">
+      <link type="text/css" rel="stylesheet" href="staticfiles/home.css">
       
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
           <div><a class="navbar-main-link" class="navbar-main-left-home" href="{% url 'home' %}">Home</a></div>
         </div>
         <div class="navbar-main-right">
-          <div><a class="navbar-main-link" href="{% url 'item_store' %}">All Items</a></div>
+          <div><a class="navbar-main-link" onclick="All_Items_func()" id="All_Items" href="{% url 'item_store' %}">All Items</a></div>
           <div><a class="navbar-main-link" href="{% url 'item_store' %}">Cart</a></div>
           <div><a class="navbar-main-link" href="{% url 'item_store' %}">SignIn</a></div>
         </div>
@@ -81,5 +81,7 @@
         <div style="margin-left: 50px; font-weight: 800;">Made by Raphael Bessin (2022)</div>
         <div style="margin-right: 50px; font-weight: 800;">Made with Python/Django & CSS/HTML</div>
       </div>
+
+      <script type="text/javascript" src="staticfiles/item-store.js"></script>
     </body>
   </html>

@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <title>E-Commerce Home</title>
-    <link type="text/css" rel="stylesheet" href="templates/item-store.css">
+    <link type="text/css" rel="stylesheet" href="staticfiles/item-store.css">
   </head>
   <body>
     <div class="navbar-main">
@@ -12,17 +12,17 @@
         <div><a class="navbar-main-link" href="{% url 'home' %}">Home</a></div>
       </div>
       <div class="navbar-main-right">
-        <div><a class="navbar-main-link" href="{% url 'item_store' %}">All Items</a></div>
+        <div><a class="navbar-main-link" onclick="All_Items_func()" id="All_Items" href="{% url 'item_store' %}">All Items</a></div>
         <div><a class="navbar-main-link" href="{% url 'item_store' %}">Cart</a></div>
         <div><a class="navbar-main-link" href="{% url 'item_store' %}">SignIn</a></div>
       </div>
     </div>
     <div class="prefernce-bar-main">
-      <div class="preference-bar-main-item">Meat & Seafood</div>
-      <div class="preference-bar-main-item">Bakery</div>
-      <div class="preference-bar-main-item">Fruits</div>
-      <div class="preference-bar-main-item">Vegetables</div>
-      <div class="preference-bar-main-item">Dairy</div>
+      <button id="Meat_Seafood" onclick="Meat_Seafood_func()" class="preference-bar-main-item">Meat & Seafood</button>
+      <button id="Bakery" onclick="Bakery_func()" class="preference-bar-main-item">Bakery</button>
+      <button id="Fruits" onclick="Fruits_func()" class="preference-bar-main-item">Fruits</button>
+      <button id="Vegetables" onclick="Vegetables_func()" class="preference-bar-main-item">Vegetables</button>
+      <button id="Dairy" onclick="Dairy_func()" class="preference-bar-main-item">Dairy</button>
     </div>
     
     <div class="triple-item-container">
@@ -44,6 +44,9 @@
       <div style="margin-left: 50px; font-weight: 800;">Made by Raphael Bessin (2022)</div>
       <div style="margin-right: 50px; font-weight: 800;">Made with Python/Django & CSS/HTML</div>
     </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="staticfiles/item-store.js"></script>
 
   </body>
 </html>
