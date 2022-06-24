@@ -103,6 +103,34 @@
   color: aliceblue;
 }
 
+.preference-bar-main-item-set{
+  color: aliceblue;
+  text-decoration: none;
+  line-height: 26px;
+  text-align: center;
+
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+
+
+  border: solid;
+  border-width: 2px;
+  border-color: rgb(197, 191, 191);
+
+  padding: 5px;
+  margin: 5px;
+  width: 140px;
+
+  background-color: rgb(140, 143, 146);
+}
+
+.preference-bar-main-item-set:hover{
+  text-decoration: none;
+  
+  background-color: rgb(234, 238, 241);
+  color: black;
+}
+
 /* Store Item Displays */
 /* Store Item Main Info Containers */
 .triple-item-container{
@@ -195,6 +223,7 @@
   color: black;
 }
 
+/* Bottom Container */
 .bottom-container{
   display: flex;
   flex-direction: row;
