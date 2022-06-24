@@ -13,8 +13,6 @@
       </div>
       <div class="navbar-main-right">
         <div><a class="navbar-main-link" href="{% url 'item_store' %}">All Items</a></div>
-        <div><a class="navbar-main-link" href="{% url 'item_store' %}">Cart</a></div>
-        <div><a class="navbar-main-link" href="{% url 'item_store' %}">SignIn</a></div>
       </div>
     </div>
     <div class="prefernce-bar-main">
@@ -35,7 +33,7 @@
           <div class="single-item-container-text" style="padding-bottom: 0;"">${{item.price}}</div>
           <div class="single-item-container-text" style="padding-top: 0; font-family: Poppins; font-weight: 0, 500;">Tag : {{item.tag}}</div>
           <div class="single-item-container-btn-div">
-            <button class="single-item-container-btn"><a style="color: black; text-decoration: none;" href="">Add to Cart</a></button>
+            <button class="single-item-container-btn">Add to Cart</button>
           </div>
         </div>
       </div>
