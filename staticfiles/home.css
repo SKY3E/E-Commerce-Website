@@ -274,6 +274,28 @@
   text-align: center; 
 }
 
+.main-policy-text{
+  border-left: solid 2px;
+  border-right: solid 2px;
+}
+
+/* Main Policy In Between */
+.main-policy-in-between-div{
+  margin-top: 20px;
+  padding: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+
+  border: solid;
+  border-width: 2px;
+  border-color: rgb(107, 172, 82);
+  border-radius: 10px;
+
+  background-color: rgb(168, 218, 172);
+
+  height: 14px;
+}
+
 /* Bottom Bar */
 .main-bottom-container{
   display: flex;
@@ -289,11 +311,6 @@
 
   Background-color : rgb(224, 240, 226);
   height: 60px;
-}
-
-.main-policy-text{
-  border-left: solid 2px;
-  border-right: solid 2px;
 }
 
 /* Body/Main Page CSS */

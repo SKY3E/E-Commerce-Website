@@ -158,8 +158,8 @@
   justify-content: center;
   align-content: center;
 
-  width: 300px;
-  height: 360px;
+  width: 280px;
+  height: 340px;
   padding: 10px;
 
   background-color: rgb(224, 240, 226);
@@ -194,35 +194,6 @@
 .single-item-container-text{
   padding: 5px;
   padding-left: 10px;
-}
-
-.single-item-container-btn-div{
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.single-item-container-btn{
-  border: solid;
-  border-width: 2px;
-  border-color: rgb(197, 191, 191);
-
-  background-color: rgb(234, 238, 241);
-  
-  font-family: Poppins;
-  font-weight: 800;
-
-  width: 70%;
-}
-
-.single-item-container-btn:hover{
-  background-color: rgb(140, 143, 146);
-  color: aliceblue;
-}
-
-.single-item-container-btn:active{
-  background-color: rgb(236, 200, 200);
-  color: black;
-  border-color: rgb(229, 182, 182);
 }
 
 /* Bottom Container */
